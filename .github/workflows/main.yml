@@ -1,0 +1,21 @@
+name: Test GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  First-Jops:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcom Step
+        run: echo "Welcom First Step"
+        
+      - name: Checkout Repo
+        uses: actions/checkout@v6.0.1
+  
+      - name: List File
+        run: ls -la
+  
