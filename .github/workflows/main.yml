@@ -6,16 +6,15 @@ on:
       - main
       
 jobs:
-  First-Jops:
+  First-Jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Welcom Step
-        run: echo "Welcom First Step"
+      - name: Welcome Step
+        run: echo "Welcome First Step"
         
       - name: Checkout Repo
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v4
   
-      - name: List File
+      - name: List Files
         run: ls -la
-  
